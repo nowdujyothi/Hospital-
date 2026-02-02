@@ -1,0 +1,145 @@
+USE WAREHOUSE COMPUTE_WH;
+USE DATABASE HOSPITAL;
+USE SCHEMA   RAW;
+
+
+
+CREATE STAGE IF NOT EXISTS hospitalstage
+URL = 's3://apollohospital/source/'
+CREDENTIALS =( AWS_KEY_ID ='' AWS_SECRET_KEY = '')
+
+
+
+create or replace table raw_patients
+(
+  patient_id  string,
+  patient_name  string,
+  gender string ,
+  dob string ,
+  city string
+)
+
+COPY INTO raw_patients
+FROM '@hospitalstage/patients.csv '
+FILE_FORMAT = (
+    TYPE = CSV
+    PARSE_HEADER = TRUE
+    FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE
+ON_ERROR = 'CONTINUE';
+
+
+---if we want other clm we need to add schema in snowflake 
+---ALTER TABLE raw_patients
+---ADD COLUMN blood_group STRING;
+
+
+
+create or replace table raw_doctors
+(
+doctor_id string,
+doctor_name string,
+specialization string,
+branch_id string
+)
+
+
+COPY INTO raw_doctors
+FROM '@hospitalstage/Doctors.csv '
+FILE_FORMAT = (
+    TYPE = CSV
+    PARSE_HEADER = TRUE
+    FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE
+ON_ERROR = 'CONTINUE';
+
+
+create or replace table raw_branches
+(
+branch_id string,
+branch_name string,
+city string,
+state string
+)
+
+COPY INTO raw_branches
+FROM '@hospitalstage/Branches.csv '
+FILE_FORMAT = (
+    TYPE = CSV
+    PARSE_HEADER = TRUE
+    FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE
+ON_ERROR = 'CONTINUE';
+
+
+create or replace table raw_treatments
+(
+treatment_id string,
+treatment_name string,
+department string,
+cost string
+)
+
+
+COPY INTO raw_treatments
+FROM '@hospitalstage/treatment.csv'
+FILE_FORMAT = (
+    TYPE = CSV
+    SKIP_HEADER = 1
+    FIELD_DELIMITER = ','
+)
+ON_ERROR = 'CONTINUE';
+
+
+select *from raw_treatments
+
+create or replace table raw_insurance
+(
+insurance_id string,
+provider_name string,
+plan_type string
+)
+
+
+COPY INTO raw_insurance
+FROM '@hospitalstage/insurance.csv '
+FILE_FORMAT = (
+    TYPE = CSV
+    PARSE_HEADER = TRUE
+    FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE
+ON_ERROR = 'CONTINUE';
+
+
+
+
+create or replace table raw_visits
+(
+visit_id string,
+patient_id string,
+doctor_id string,
+branch_id string,
+treatment_id string,
+insurance_id string,
+visit_date string,
+bill_amount string
+)
+
+COPY INTO raw_visits
+FROM '@hospitalstage/visitors.csv  '
+FILE_FORMAT = (
+    TYPE = CSV
+    PARSE_HEADER = TRUE
+    FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE
+ON_ERROR = 'CONTINUE';
+
+select * from raw_visits
+
+
+
