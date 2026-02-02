@@ -1,0 +1,41 @@
+patient_id,patient_name,gender,dob,city
+P001,Ravi kumar,male,14-05-1992,hyderabad
+P002,SNEHA REDDY,Female,02-11-1998,Visakhapatnam
+P003,Anil Sharma,M,22-03-1985,delhi
+P004,Priya Mehta,F,18-07-1990,MUMBAI
+P005,Karthik Rao,Male,09-01-2000,bengaluru
+P006,,Female,25-09-2019,Pune
+P007,Arjun Patel,MALE,10-12-2018,Ahmedabad
+P008,Divya iyer,female,05-04-1993,Chennai
+P009,Suresh Naidu,,17-06-1979,Vijayawada
+P010,Meghana Das,FEMALE,28-02-2021,Kolkata
+P011,rahul jain,Male,14-08-1996,Indore
+P012,Anusha Rao,Female,21-01-2017,Hyderabad
+P013,Vikram Malhotra,M,03-10-1983,DELHI
+P014,Keerthi reddy,Female,19-11-2016,warangal
+P015,Naveen Kumar,Male,,Nellore
+P016,Pooja Kulkarni,FEMALE,07-07-1989,Nagpur
+P017,Ajay Verma,Male,30-05-2020,Jaipur
+P018,Swathi Nair,female,01-12-1994,kochi
+P019,Ramesh Goud,MALE,09-09-1986,nizamabad
+P020,Shalini Gupta,Female,15-06-2015,Lucknow
+P021,RAVI KUMAR,Male,14-05-1992,Hyderabad
+P022,Sunita Verma ,Female,09-05-2018,Delhi
+P023,RAJESH PATEL,Male,23-11-1981,Ahmedabad
+P024,Lavanya sri,F,18-03-2022,chennai
+P025,Imran Khan,male,30-07-1995,Bhopal
+P026,Mohd Asif,M,21-06-2019, hyderabad
+P027,Neha singh,FEMALE,01-12-1999,DELHI
+P028,KIRAN RAO,,19-08-2017,Bangalore
+P029,praveen kumar,Male,1990.03.11,VIZAG
+P030,Anjali,F,07-07-2020,Pune
+P031,Deepak Yadav,Male,07-06-1994,Gurgaon
+P032,meenal shah,female,19-09-2016,Surat
+P033,Sai teja,M,15-01-2018,Vizianagaram
+P034,Farah Begum,Female,02-11-1988,Hyderabad
+P035,deepak yadav,MALE,07-06-1994,gurgaon
+P036,Megha Jain,F,2023-02-30,Indore
+P037,Abhishek Tiwari,Male,28-12-1986,Prayagraj
+P038,Ritika Choudhary,female,11-04-2019,Noida
+P039,Srinivas reddy,MALE,03-03-1978,Karimnagar
+P040,Kavitha Kumari,FEMALE,24-07-2015,Tirupati

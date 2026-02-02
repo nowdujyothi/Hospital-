@@ -1,0 +1,21 @@
+insurance_id,provider_name,plan_type
+I001,Star health,Individual
+I002,HDFC ERGO,Family floater
+I003,ICICI lombard,Corporate
+I004,Religare Health,individual
+I005,Max bupa,Family
+I006,CARE health,Individual
+I007,Niva Bupa,corp
+I008,TATA AIG,Individual
+I009,Aditya Birla,Family Floater
+I010,New India Assurance,Corporate
+I011,Oriental insurance,Individual
+I012,United India,Family Floater
+I013,Bajaj Allianz,Corporate
+I014,Future Generali,Indiv
+I015,Manipal Cigna,Family
+I016,Acko,Individual
+I017,Edelweiss,Corporate
+I018,Chola MS,Individual
+I019,Liberty General,Family
+I020,Royal Sundaram,Corporate

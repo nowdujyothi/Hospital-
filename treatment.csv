@@ -1,0 +1,26 @@
+treatment_id,treatment_name,department,cost
+T001,Heart Checkup,Cardiology,5000
+T002,Angioplasty,cardio,150000
+T003,MRI scan,Neurology,8000
+T004,Brain Surgery,NEUROLOGY,30000
+T005,Knee Replacement,Orthopedics,120000
+T006,fracture fixation,Ortho,40000
+T007,Skin Allergy test,Dermatology,2500
+T008,Laser Skin Treatment,derma,15000
+T009,General health checkup,General Medicine,3000
+T010,Fever Treatment,General Medicine,1500
+T011,Pregnancy Checkup,Gynaecology,4000
+T012,Delivery Package,Gynecology,60000
+T013,Child Vaccination,Pediatrics,2000
+T014,Newborn care,Pediatrics,10000
+T015,ENT consultation,ENT,2000
+T016,Sinus Surgery,ENT,45000
+T017,Prostate Checkup,Urology,7000
+T018,Kidney Stone Removal,Urology,90k
+T019,Cancer Screening,Oncology,12000
+T020,Chemotherapy session,Oncology,50000
+T021,ECG Test,Cardiology,1200
+T022,Echo cardiogram,Cardiology,4500
+T023,CT Scan,Neuro,6000
+T024,Spine Surgery,Orthopedics,180000
+T025,Emergency Care,General Medicine,ten thousand

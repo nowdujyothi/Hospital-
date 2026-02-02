@@ -1,0 +1,21 @@
+doctor_id,doctor_name,specialization,branch_id
+D001,Dr. Suresh Rao,cardiology,B001
+D002,dr meena iyer,Neurology ,B002
+D003,Dr.Amit Verma,ORTHOPEDICS,B001
+D004,Dr Kavya Nair,derma,B003
+D005,ROHIT SINGH,General medicine,B002
+D006,Dr. Pankaj Mishra,Cardio,B001
+D007,Neelima Joshi,Gynacology,B001
+D008,Arvind Kumar,pediatrics,B002
+D009,Dr Shweta Shah,ENT ,B003
+D010,Manoj Patil,Urology,B001
+D011,,Neurology,B002
+D012,Dr Anjali Gupta,Oncology,B003
+D013,Harish Rao,Ortho,B001
+D014,Rekha Menon,Dermatology,B002
+D015,Deepak Chandra,General Medicine,B003
+D016,Dr Vinod Khanna,CARDIOLOGY,B001
+D017,Lakshmi Devi,GYNECOLOGY,B002
+D018,Nitin Agarwal,PEDIATRICS,B003
+D019,Farhan Ali,ent,B001
+D020,Kiran Shetty,Urology,B002
