@@ -6,7 +6,7 @@ USE SCHEMA   RAW;
 
 CREATE STAGE IF NOT EXISTS hospitalstage
 URL = 's3://apollohospital/source/'
-CREDENTIALS =( AWS_KEY_ID ='' AWS_SECRET_KEY = '')
+CREDENTIALS =( AWS_KEY_ID ='', AWS_SECRET_KEY = '')
 
 
 
