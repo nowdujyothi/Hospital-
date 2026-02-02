@@ -1,0 +1,40 @@
+name: 'apollo_hospitals'
+version: '1.0.0'
+config-version: 2
+
+vars:
+  kids_age_limit: 10
+
+
+
+profile: 'apollo_hospitals'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+
+models:
+  apollo_hospitals:
+    bronze:
+      +materialized: table
+      +schema: bronze
+
+    silver:
+      +materialized: table
+      +schema: silver
+
+    gold:
+      +materialized: table  
+      +schema: gold
+
+
